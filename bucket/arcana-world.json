@@ -1,0 +1,38 @@
+{
+    "version": "0.3.0",
+    "description": "Bilibili live streaming and chat client with a floating chat overlay and speech announcements",
+    "homepage": "https://github.com/TarocchiLive/arcana-world",
+    "license": "GPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/TarocchiLive/arcana-world/releases/download/v0.3.0/arcana-world-windows-amd64.zip",
+            "hash": "379ecb3f0b967dfe6aec4ea2a0aa79542c372c7c67d6f88eb980109bbf35494e"
+        },
+        "32bit": {
+            "url": "https://github.com/TarocchiLive/arcana-world/releases/download/v0.3.0/arcana-world-windows-386.zip",
+            "hash": "270ee1343d07bac10c45fb0b482d0a055d3c2fe1b4c7e2b783ffecddd903fbf8"
+        },
+        "arm64": {
+            "url": "https://github.com/TarocchiLive/arcana-world/releases/download/v0.3.0/arcana-world-windows-arm64.zip",
+            "hash": "b0e08ff64f1392e15c6755ec17040df329971323cf371952ae57532453b585ae"
+        }
+    },
+    "bin": "arcana-world.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/TarocchiLive/arcana-world/releases/download/v$version/arcana-world-windows-amd64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/TarocchiLive/arcana-world/releases/download/v$version/arcana-world-windows-386.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/TarocchiLive/arcana-world/releases/download/v$version/arcana-world-windows-arm64.zip"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/checksums.txt"
+        }
+    }
+}
